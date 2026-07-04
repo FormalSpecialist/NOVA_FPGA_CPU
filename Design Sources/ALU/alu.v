@@ -8,7 +8,8 @@ module alu(
     
     output reg [7:0] result,
     output reg zeroFlag,
-    output reg overflowFlag
+    output reg overflowFlag,
+    output reg underflowFlag
 
 );
 
@@ -23,7 +24,11 @@ module alu(
         // Determines which action to perfom based on Operational Code
         case (opCode)
 
-            opADD:
+            opADD: result = 8'b0;
+            opSUB: result = 8'b0;
+            opAND: result = 8'b0;
+            opOR: result = 8'b0;
+            default: result = 8'b0;
 
         endcase
 
@@ -38,14 +43,14 @@ module alu(
 
         end
 
-        // Tests to see if Overflow occurs
-        if (opCode == opADD && (  ) ) begin
-            
-        end
+        // Tests to see if Overflow occurs | a + b = result
+        if ( opCode == opADD ) begin
+            overflowFlag = ( operandA > result || operandB > result );
+        end 
 
-        // Tests to see if Underflow occurs
-        if (opCode == opSUB && ( ) ) begin
-            
+        // Tests to see if Underflow occurs | a - b = result
+        if (opCode == opSUB ) begin
+            underflowFlag = ( result > operandA);
         end
 
     end
