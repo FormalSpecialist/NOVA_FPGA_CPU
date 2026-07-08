@@ -7,9 +7,9 @@ module alu(
     input [2:0] opCode,
     
     output reg [7:0] result,
-    output reg zeroFlag,
-    output reg overflowFlag,
-    output reg underflowFlag
+    output zeroFlag,
+    output overflowFlag,
+    output underflowFlag
 
 );
 
@@ -18,8 +18,10 @@ module alu(
     parameter opAND = 3'b010;
     parameter opOR = 3'b011;
 
+    // Enable for Flags
+    reg flags_en = 1'b0;
 
-    always @ (opCode) begin
+always @ (*) begin
 
         // Determines which action to perfom based on Operational Code
         case (opCode)
@@ -32,28 +34,24 @@ module alu(
 
         endcase
 
-        // Testing to see if result is zero
-        if (result == 8'b0) begin
-
-            zeroFlag = 1'b1;
-
-        end else begin
-
-            zeroFlag = 1'b0;
-
-        end
-
-        // Tests to see if Overflow occurs | a + b = result
-        if ( opCode == opADD ) begin
-            overflowFlag = ( operandA > result || operandB > result );
-        end 
-
-        // Tests to see if Underflow occurs | a - b = result
-        if (opCode == opSUB ) begin
-            underflowFlag = ( result > operandA);
-        end
+        flags_en = 1'b1;
 
     end
+
+
+    // Initializations of Modules
+    arithmeticFlags flags (
+        .operandA(operandA),
+        .operandB(operandB),
+        .opCode(opCode),
+        .result(result),
+        .flags_en(flags_en),
+
+        .zeroFlag(zeroFlag),
+        .overflowFlag(overflowFlag),
+        .underflowFlag(underflowFlag)
+    );
+    
 
 
 endmodule
