@@ -26,10 +26,10 @@ always @ (*) begin
         // Determines which action to perfom based on Operational Code
         case (opCode)
 
-            opADD: result = 8'b0;
-            opSUB: result = 8'b0;
-            opAND: result = 8'b0;
-            opOR: result = 8'b0;
+            opADD: result = operandA + operandB;
+            opSUB: result = operandA - operandB;
+            opAND: result = operandA & operandB;
+            opOR: result = operandA | operandB;
             default: result = 8'b0;
 
         endcase

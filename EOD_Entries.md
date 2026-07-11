@@ -42,3 +42,40 @@ Goals:
 - Finish Programming the case statement
 - Program checks for flags
 - Begin developing base files for each operational code.
+
+
+
+*** July 9th, 2026 ***
+
+Moved structure for Flags to a separate file (arithmeticFlags.v), in the hopes of separating out logical components. However, the extentions used within VSCode are directly having a issue with these types of file references. 
+
+Changes:
+- Create arithmeticFlags.v to hold all code for flags. 
+- Fleshed out the code needed for basic flags (overflow and underflow)
+- Moved code referencing flags from alu.v to arithmeticFlags.v
+
+Issues:
+- Need to resolve syntax issues related to referencing other files.
+    - Perhaps try deleting all extensions and re-installing
+
+Goals:
+- Finish Programming the case statement
+- Resolve issues in Extentions
+
+
+
+*** July 10th, 2026 ***
+
+Removed Extentions and transitioned to TerosHDL 
+
+Changes:
+- Removed Extentions
+- Began experimenting with TerosHDL
+- Finished the Case Statement to do basic functionality, need to fact check whether it works
+
+Issues:
+- Need to read through the guide... if I'm unable to get it to work, then I will simply just use Vivado to program... not ideal but may be necessary.
+
+Goals:
+- Either figure out how to use TerosHDL or transition to Vivado.
+- Build a testbench
