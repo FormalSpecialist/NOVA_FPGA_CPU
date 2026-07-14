@@ -90,6 +90,8 @@ read_xdc {{C:/Users/narno/Desktop/Programing/PersonalProject/fpga_cpu_project/Co
 set_property used_in_implementation false [get_files {{C:/Users/narno/Desktop/Programing/PersonalProject/fpga_cpu_project/Constraint Files/Nexys-A7-100T-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental C:/Users/narno/Desktop/Programing/PersonalProject/fpga_cpu_project/fpga_cpu/fpga_cpu.srcs/utils_1/imports/synth_1/alu.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

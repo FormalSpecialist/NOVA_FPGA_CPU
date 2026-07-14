@@ -79,3 +79,20 @@ Issues:
 Goals:
 - Either figure out how to use TerosHDL or transition to Vivado.
 - Build a testbench
+
+
+
+*** July 13th, 2026 ***
+
+Decided on using base Vivado for error control and programming. 
+
+Changes:
+- Transitioned out of VSCode, except for these specific entries and all READMEs
+- Created the alu_tb.v file 
+- Added and subsequently fixed code within ALU focused on reset. 
+
+Issues:
+- Likely need to add a clock to properly allow for the testbench to properly work. 
+
+Goals:
+- Add a clock into ALU and then run testbench.

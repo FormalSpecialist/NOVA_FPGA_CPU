@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date         : Sun Jul  5 19:13:10 2026
+| Date         : Mon Jul 13 20:04:21 2026
 | Host         : Shinobi running 64-bit major release  (build 9200)
 | Command      : report_methodology -file alu_methodology_drc_routed.rpt -pb alu_methodology_drc_routed.pb -rpx alu_methodology_drc_routed.rpx
 | Design       : alu
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 2
+             Checks found: 3
 +-----------+----------+--------------------------------+--------+
 | Rule      | Severity | Description                    | Checks |
 +-----------+----------+--------------------------------+--------+
-| TIMING-20 | Warning  | Non-clocked latch              | 1      |
+| TIMING-20 | Warning  | Non-clocked latch              | 2      |
 | LATCH-1   | Advisory | Existing latches in the design | 1      |
 +-----------+----------+--------------------------------+--------+
 
@@ -38,9 +38,14 @@ Non-clocked latch
 The latch flags/overflowFlag_reg cannot be properly analyzed as its control pin flags/overflowFlag_reg/G is not reached by a timing clock
 Related violations: <none>
 
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch flags/underflowFlag_reg cannot be properly analyzed as its control pin flags/underflowFlag_reg/G is not reached by a timing clock
+Related violations: <none>
+
 LATCH-1#1 Advisory
 Existing latches in the design  
-There are 1 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+There are 2 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
