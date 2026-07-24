@@ -17,7 +17,7 @@ module alu_tb();
     wire underflowFlag;
 
     // Instantiate
-    alu_tb uut (
+    alu uut (
 
         .operandA(operandA),
         .operandB(operandB),

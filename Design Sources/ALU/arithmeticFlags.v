@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 
 module arithmeticFlags (
     input [7:0] operandA,
@@ -18,6 +17,10 @@ module arithmeticFlags (
     parameter opOR  = 3'b011;
 
 always @ (*) begin
+    
+    zeroFlag = 0;
+    overflowFlag = 0;
+    underflowFlag = 0;
     
     if (flags_en) begin
 

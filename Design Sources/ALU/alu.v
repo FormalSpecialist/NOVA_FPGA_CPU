@@ -1,4 +1,3 @@
-`timescale 1ns / 1ps
 
 module alu(
 
@@ -18,7 +17,7 @@ module alu(
     parameter opSUB = 3'b001;
     parameter opAND = 3'b010;
     parameter opOR = 3'b011;
-    // opCode = 111   -->   only assigned when reset
+    // opCode = 3'b111   -->   only assigned when reset
 
     // Enable for Flags
     reg flags_en;
@@ -43,8 +42,6 @@ always @ (*) begin
         default: result = 8'b00000000;
 
     endcase
-
-    flags_en = 1'b1;
 
 end
 
