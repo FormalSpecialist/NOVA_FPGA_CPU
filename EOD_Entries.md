@@ -96,3 +96,20 @@ Issues:
 
 Goals:
 - Add a clock into ALU and then run testbench.
+
+
+
+*** July 24th, 2026 ***
+
+Fixed the ALU testbench and base code
+
+Changes:
+- Changed the Testbench code to accurately reflect the proper file
+- Fixed the reset button in ALU file
+
+Issues:
+- Likely need to add a clock to properly allow for the testbench to properly work. However, after testing Testbench, doesn't seem to have any issues.
+
+Goals:
+- Expand the differnet calculations to be performed by the ALU
+- Begin on Memory and storage. 
