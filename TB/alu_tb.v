@@ -41,23 +41,23 @@ module alu_tb();
         
         // ADD
         reset = 0;
-        opCode = 000;
+        opCode = 3'b000;
         operandA = 8'b00000010;
         operandB = 8'b00000001;
 
-        // Expected Result: 00000011
+        // Expected Result: 00000011 | 3
         
         #10
-        reset = 1;
+        reset = 0;
         #10
 
         // SUB
         reset = 0;
-        opCode = 001;
+        opCode = 3'b001;
         operandA = 8'b00000101;
         operandB = 8'b00000011;
 
-        // Expected Result: 00000010
+        // Expected Result: 00000010 | 2
         
         #10
         reset = 1;
@@ -65,11 +65,11 @@ module alu_tb();
 
         // AND
         reset = 0;
-        opCode = 010;
+        opCode = 3'b010;
         operandA = 8'b00101110;
         operandB = 8'b10101101;
 
-        // Expected Result: 00101100
+        // Expected Result: 00101100 | 2C
         
         #10
         reset = 1;
@@ -77,14 +77,47 @@ module alu_tb();
 
         // OR
         reset = 0;
-        opCode = 011;
+        opCode = 3'b011;
         operandA = 8'b01000010;
         operandB = 8'b00011011;
 
-        // Expected Result: 01011011
+        // Expected Result: 01011011 | 5B
         
         #10
         reset = 1;
+        #10
+
+        // zeroFlag
+        reset = 0;
+        opCode = 3'b001;
+        operandA = 8'b00000010;
+        operandB = 8'b00000010;
+
+        // Expected Result: 0
+        
+        #10
+        reset = 1;
+        #10
+
+        // overflowFlag
+        reset = 0;
+        opCode = 3'b000;
+        operandA = 8'b00000011;
+        operandB = 8'b11111111;
+
+        // Expected Result: Flag up and calc broken?
+        
+        #10
+        reset = 1;
+        #10
+
+        // underflowFlag
+        reset = 0;
+        opCode = 3'b001;
+        operandA = 8'b00000001;
+        operandB = 8'b00000010;
+
+        // Expected Result: Flag up and calc broken?
         
         #40
 
