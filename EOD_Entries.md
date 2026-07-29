@@ -113,3 +113,25 @@ Issues:
 Goals:
 - Expand the differnet calculations to be performed by the ALU
 - Begin on Memory and storage. 
+
+
+
+*** July 28th, 2026 ***
+
+Researched Next Steps on Memory Access
+
+Changes:
+- Updated Comment Descriptions of Files
+- Fixed initialization in alu.v
+- Researched how to begin development on Memory Unit for CPU
+    - Breaks into multiple sections: Program Counter, Register File (16 Registers), Data RAM (Random Access Memory)
+    - RAM consists of 256, 8 bit values for memory, registers are easier to access values for intermediate transportation of data (reading and writing)
+    - Need to update opCodes to 4 bits to accomodate READ and WRITE (LOAD and STORE) commands 
+    - State machine for clock cycle functions, and MUX for determining wether to store a value from Memory or ALU
+
+Issues:
+- No current issues.
+
+Goals:
+- Expand OpCodes
+- Begin Structuring Memory

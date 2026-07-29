@@ -1,3 +1,23 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Noah Arnold
+// 
+// Create Date: 07/09/2026 10:27:22 AM
+// Design Name: fpga_cpu
+// Module Name: arithmeticFlags
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
 module arithmeticFlags (
     input [7:0] operandA,

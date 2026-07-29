@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Noah Arnold
 // 
 // Create Date: 07/24/2026 04:26:52 PM
-// Design Name: 
+// Design Name: fpga_cpu
 // Module Name: mu
 // Project Name: 
 // Target Devices: 

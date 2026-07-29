@@ -1,3 +1,23 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: Noah Arnold
+// 
+// Create Date: 06/24/2026 04:26:52 PM
+// Design Name: fpga_cpu
+// Module Name: alu
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: arithmeticFlags.v
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
 
 module alu(
 
@@ -21,11 +41,18 @@ module alu(
 
     // Enable for Flags
     reg flags_en;
+    
+    // Initialize Values at Program Start
+    initial begin
+        result = 8'b0000_0000;
+        flags_en = 1'b0;
+    end
+    
 
 always @ (*) begin
 
     if (reset) begin
-        result = 8'b00000000;
+        result = 8'b0000_0000;
         flags_en = 1'b0;
     end else begin
        flags_en = 1'b1;
@@ -39,7 +66,7 @@ always @ (*) begin
         opSUB: result = operandA - operandB;
         opAND: result = operandA & operandB;
         opOR: result = operandA | operandB;
-        default: result = 8'b00000000;
+        default: result = 8'b0000_0000;
 
     endcase
 
