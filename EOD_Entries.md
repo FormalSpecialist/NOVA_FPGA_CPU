@@ -127,7 +127,7 @@ Changes:
     - Breaks into multiple sections: Program Counter, Register File (16 Registers), Data RAM (Random Access Memory)
     - RAM consists of 256, 8 bit values for memory, registers are easier to access values for intermediate transportation of data (reading and writing)
     - Need to update opCodes to 4 bits to accomodate READ and WRITE (LOAD and STORE) commands 
-    - State machine for clock cycle functions, and MUX for determining wether to store a value from Memory or ALU
+    - State machine for clock cycle functions, and MUX for determining whether to store a value from Memory or ALU
 
 Issues:
 - No current issues.
