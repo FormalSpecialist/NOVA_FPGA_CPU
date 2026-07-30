@@ -1,9 +1,9 @@
-# End of Day Entries
-
-## Description
+# Description
 The main purpose of this file is to provide a form of documentation for any updates, notes, changes, and goals for myself as the project continues. This level of documentation focuses more as a readable format as compared to any GitHub updates.
 
+## End of Dauy Entries
 
+### JUNE ###
 
 *** June 23rd, 2026 ***
 Changes:
@@ -43,6 +43,8 @@ Goals:
 - Program checks for flags
 - Begin developing base files for each operational code.
 
+
+### JULY ###
 
 
 *** July 9th, 2026 ***
@@ -128,6 +130,23 @@ Changes:
     - RAM consists of 256, 8 bit values for memory, registers are easier to access values for intermediate transportation of data (reading and writing)
     - Need to update opCodes to 4 bits to accomodate READ and WRITE (LOAD and STORE) commands 
     - State machine for clock cycle functions, and MUX for determining whether to store a value from Memory or ALU
+
+Issues:
+- No current issues.
+
+Goals:
+- Expand OpCodes
+- Begin Structuring Memory
+
+
+
+*** July 29th, 2026 ***
+
+Changed Project name to NOVA
+
+Changes:
+- Changed project name to NOVA, gives it a better vibe and easier to announce rather than "CPU Project".
+- 
 
 Issues:
 - No current issues.

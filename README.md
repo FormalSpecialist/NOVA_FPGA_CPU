@@ -1,7 +1,7 @@
-# fpga_cpu_project
+# fpga_cpu_project | NOVA
 
 ## MAIN GOAL
-To build a simplistic CPU using a Nexys A7 FPGA which can execute simplistic code as a proof of concept.
+To build a simplistic CPU, under the code name NOVA, using a Nexys A7 FPGA which can execute simplistic code as a proof of concept.
 
 ## ADDITIONAL GOALS
 1) Attatch additional sensors to the FPGA in the premise of expanding capabilities.

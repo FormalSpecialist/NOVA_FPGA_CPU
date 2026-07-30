@@ -91,6 +91,7 @@
   <FileSets Version="1" Minor="32">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+<<<<<<< HEAD:NOVA/fpga_cpu.xpr
       <File Path="$PPRDIR/../Design Sources/MEMORY/mu.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -121,6 +122,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+=======
+>>>>>>> arithmatic_logic_unit:fpga_cpu/fpga_cpu.xpr
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="alu"/>
@@ -141,6 +144,7 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
       <Filter Type="Srcs"/>
+<<<<<<< HEAD:NOVA/fpga_cpu.xpr
       <File Path="$PPRDIR/../TB/alu_tb.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -148,6 +152,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+=======
+>>>>>>> arithmatic_logic_unit:fpga_cpu/fpga_cpu.xpr
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="alu_tb"/>
