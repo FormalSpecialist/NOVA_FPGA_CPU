@@ -146,10 +146,10 @@ Changed Project name to NOVA
 
 Changes:
 - Changed project name to NOVA, gives it a better vibe and easier to announce rather than "CPU Project".
-- 
+- Updated Resume and Started applications
 
 Issues:
-- No current issues.
+- Had to completely rework Vivado and Github files. (It Sucked...)
 
 Goals:
 - Expand OpCodes
