@@ -1,17 +1,26 @@
-
-*** Running vivado
-    with args -log alu.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source alu.tcl -notrace
-
-
-
-****** Vivado v2025.2 (64-bit)
-  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
-  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
-  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Wed Jul 29 20:12:22 2026
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Wed Jul 29 20:12:22 2026
+# Process ID         : 22132
+# Current directory  : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1
+# Command line       : vivado.exe -log alu.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source alu.tcl -notrace
+# Log file           : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1/alu.vdi
+# Journal file       : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1\vivado.jou
+# Running On         : Shinobi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 8419 MB
+# Swap memory        : 11818 MB
+# Total Virtual      : 20238 MB
+# Available Virtual  : 2738 MB
+#-----------------------------------------------------------
 source alu.tcl -notrace
 create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 607.398 ; gain = 219.434
 Command: link_design -top alu -part xc7a100tcsg324-1
