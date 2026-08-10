@@ -154,3 +154,23 @@ Issues:
 Goals:
 - Expand OpCodes
 - Begin Structuring Memory
+
+
+
+*** August 9th, 2026 ***
+
+Created the Register File
+
+Changes:
+- Created the register file. (eight registers)
+- Expanded opCodes to four bits.
+
+Issues:
+- No current issues, however, verify this fact after synthesizing and running a testbench.
+
+Goals:
+- Begin Structuring Memory
+    - Breaks into multiple sections: Program Counter, Register File (8 Registers), Data RAM (Random Access Memory)
+    - RAM consists of 256, 8 bit values for memory, registers are easier to access values for intermediate transportation of data (reading and writing)
+    - Need to update opCodes to 4 bits to accomodate READ and WRITE (LOAD and STORE) commands 
+    - State machine for clock cycle functions, and MUX for determining whether to store a value from Memory or ALU

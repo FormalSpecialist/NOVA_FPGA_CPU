@@ -4,9 +4,9 @@
 // Engineer: Noah Arnold
 // 
 // Create Date: 06/24/2026 04:26:52 PM
-// Design Name: fpga_cpu
+// Design Name: Arithmatic Logice Unit
 // Module Name: alu
-// Project Name: 
+// Project Name: NOVA
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -33,11 +33,10 @@ module alu(
 
 );
 
-    parameter opADD = 3'b000;
-    parameter opSUB = 3'b001;
-    parameter opAND = 3'b010;
-    parameter opOR = 3'b011;
-    // opCode = 3'b111   -->   only assigned when reset
+    parameter opADD = 4'b0000;
+    parameter opSUB = 4'b0001;
+    parameter opAND = 4'b0010;
+    parameter opOR = 4'b0011;
 
     // Enable for Flags
     reg flags_en;

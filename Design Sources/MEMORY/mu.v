@@ -4,9 +4,9 @@
 // Engineer: Noah Arnold
 // 
 // Create Date: 07/24/2026 04:26:52 PM
-// Design Name: fpga_cpu
+// Design Name: Memory Unit
 // Module Name: mu
-// Project Name: 
+// Project Name: NOVA
 // Target Devices: 
 // Tool Versions: 
 // Description: 
@@ -23,4 +23,8 @@
 module mu(
 
     );
+
+
+
+
 endmodule
