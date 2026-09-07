@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .init_design.begin.rst
-EAStep vivado -log alu.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source alu.tcl -notrace
+/bin/touch .write_bitstream.begin.rst
+EAStep vivado -log novaNexysA7.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source novaNexysA7.tcl -notrace
 
 

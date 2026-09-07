@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log alu.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu.tcl
+EAStep vivado -log novaNexysA7.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source novaNexysA7.tcl

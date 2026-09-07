@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep  7 11:35:59 2026
+# Process ID         : 9588
+# Current directory  : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1
+# Command line       : vivado.exe -log novaNexysA7.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source novaNexysA7.tcl -notrace
+# Log file           : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1/novaNexysA7.vdi
+# Journal file       : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/impl_1\vivado.jou
+# Running On         : Shinobi
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz
+# CPU Frequency      : 2592 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 8419 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 28821 MB
+# Available Virtual  : 8764 MB
+#-----------------------------------------------------------
+source novaNexysA7.tcl -notrace
