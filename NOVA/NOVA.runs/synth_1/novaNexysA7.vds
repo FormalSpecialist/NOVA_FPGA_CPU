@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Sep  7 11:34:38 2026
-# Process ID         : 25252
+# Start of session at: Mon Sep  7 13:20:42 2026
+# Process ID         : 27444
 # Current directory  : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/synth_1
 # Command line       : vivado.exe -log novaNexysA7.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source novaNexysA7.tcl
 # Log file           : C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/synth_1/novaNexysA7.vds
@@ -19,10 +19,10 @@
 # Host memory        : 8419 MB
 # Swap memory        : 20401 MB
 # Total Virtual      : 28821 MB
-# Available Virtual  : 8848 MB
+# Available Virtual  : 9462 MB
 #-----------------------------------------------------------
 source novaNexysA7.tcl -notrace
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 607.137 ; gain = 219.566
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 608.004 ; gain = 222.105
 Command: read_checkpoint -auto_incremental -incremental {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.srcs/utils_1/imports/synth_1/alu.dcp}
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.srcs/utils_1/imports/synth_1/alu.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -35,9 +35,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 25164
+INFO: [Synth 8-7075] Helper process launched with PID 26880
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1365.355 ; gain = 542.562
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1366.359 ; gain = 542.586
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'novaNexysA7' [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:15]
 INFO: [Synth 8-6157] synthesizing module 'BUFGCE' [C:/AMDDesignTools/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2688]
@@ -67,21 +67,26 @@ INFO: [Synth 8-6155] done synthesizing module 'statusRegister' (0#1) [C:/Users/n
 INFO: [Synth 8-6157] synthesizing module 'dataMemory' [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/dataMemory.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'dataMemory' (0#1) [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/dataMemory.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'cpuCore' (0#1) [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/CU/cpuCore.v:14]
-INFO: [Synth 8-226] default block is never used [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:163]
+INFO: [Synth 8-6157] synthesizing module 'sevenSegmentDisplay' [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v:13]
+	Parameter REFRESH_COUNTER_WIDTH bound to: 17 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v:45]
+INFO: [Synth 8-226] default block is never used [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'sevenSegmentDisplay' (0#1) [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:189]
 INFO: [Synth 8-6155] done synthesizing module 'novaNexysA7' (0#1) [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:15]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1487.074 ; gain = 664.281
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1488.371 ; gain = 664.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1487.074 ; gain = 664.281
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1488.371 ; gain = 664.598
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1487.074 ; gain = 664.281
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1488.371 ; gain = 664.598
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1487.074 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1488.371 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'hardwareClockBuffer.coreClockBuffer' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -89,35 +94,35 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v2.xdc]
-Finished Parsing XDC File [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v2.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/novaNexysA7_propImpl.xdc].
+Parsing XDC File [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v3.xdc]
+Finished Parsing XDC File [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/novaNexysA7_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/novaNexysA7_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1544.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1559.566 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1544.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1559.566 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1544.801 ; gain = 722.008
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1559.566 ; gain = 735.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1544.801 ; gain = 722.008
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1559.566 ; gain = 735.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1544.801 ; gain = 722.008
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1559.566 ; gain = 735.793
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module 'cu'
 ---------------------------------------------------------------------------------------------------
@@ -131,7 +136,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'currentState_reg' in module
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'currentState_reg' using encoding 'one-hot' in module 'cu'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1544.801 ; gain = 722.008
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1559.566 ; gain = 735.793
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -179,25 +184,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1544.801 ; gain = 722.008
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1560.629 ; gain = 736.855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 1688.262 ; gain = 865.469
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1683.676 ; gain = 859.902
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1722.551 ; gain = 899.758
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1720.594 ; gain = 896.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1722.551 ; gain = 899.758
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 1720.594 ; gain = 896.820
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -214,39 +219,39 @@ Start Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-5410] Found another clock driver \hardwareClockBuffer.coreClockBuffer :O [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:116]
+WARNING: [Synth 8-5410] Found another clock driver \hardwareClockBuffer.coreClockBuffer :O [C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v:120]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -264,43 +269,44 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     1|
 |2     |BUFGCE |     1|
-|3     |CARRY4 |    16|
-|4     |LUT1   |     3|
-|5     |LUT2   |     7|
-|6     |LUT3   |    47|
-|7     |LUT4   |    33|
-|8     |LUT5   |    13|
-|9     |LUT6   |    36|
-|10    |FDPE   |     2|
-|11    |FDRE   |   113|
-|12    |FDSE   |     1|
-|13    |IBUF   |     6|
-|14    |OBUF   |    16|
+|3     |CARRY4 |    21|
+|4     |LUT1   |     4|
+|5     |LUT2   |     6|
+|6     |LUT3   |    58|
+|7     |LUT4   |    35|
+|8     |LUT5   |    16|
+|9     |LUT6   |    41|
+|10    |MUXF7  |     3|
+|11    |FDPE   |     2|
+|12    |FDRE   |   130|
+|13    |FDSE   |     1|
+|14    |IBUF   |     6|
+|15    |OBUF   |    32|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:36 . Memory (MB): peak = 1950.594 ; gain = 1070.074
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1950.594 ; gain = 1127.801
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:32 . Memory (MB): peak = 1946.297 ; gain = 1051.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1946.297 ; gain = 1122.523
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1950.594 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1946.297 ; gain = 0.000
 WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'hardwareClockBuffer.coreClockBuffer' of type 'BUFGCE' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
-INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1963.441 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1953.762 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 1 instances were transformed.
   BUFGCE => BUFGCTRL: 1 instance 
 
-Synth Design complete | Checksum: 969f17f7
+Synth Design complete | Checksum: 7b1d8ec2
 INFO: [Common 17-83] Releasing license: Synthesis
-54 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 1963.441 ; gain = 1341.797
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1963.441 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1953.762 ; gain = 1331.945
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1953.762 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.runs/synth_1/novaNexysA7.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file novaNexysA7_utilization_synth.rpt -pb novaNexysA7_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 11:35:43 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  7 13:21:52 2026...

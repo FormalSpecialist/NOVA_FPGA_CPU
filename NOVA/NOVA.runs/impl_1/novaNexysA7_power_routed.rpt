@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
-| Date             : Mon Sep  7 11:37:26 2026
+| Date             : Mon Sep  7 13:25:54 2026
 | Host             : Shinobi running 64-bit major release  (build 9200)
 | Command          : report_power -file novaNexysA7_power_routed.rpt -pb novaNexysA7_power_summary_routed.pb -rpx novaNexysA7_power_routed.rpx
 | Design           : novaNexysA7
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.110        |
+| Total On-Chip Power (W)  | 0.127        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.013        |
+| Dynamic (W)              | 0.030        |
 | Device Static (W)        | 0.097        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 84.5         |
-| Junction Temperature (C) | 25.5         |
+| Max Ambient (C)          | 84.4         |
+| Junction Temperature (C) | 25.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,15 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      279 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      104 |     63400 |            0.16 |
-|   CARRY4       |    <0.001 |       16 |     15850 |            0.10 |
-|   Register     |    <0.001 |      116 |    126800 |            0.09 |
-|   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |    <0.001 |      219 |       --- |             --- |
-| I/O            |     0.010 |       22 |       210 |           10.48 |
+| Slice Logic    |    <0.001 |      327 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      119 |     63400 |            0.19 |
+|   CARRY4       |    <0.001 |       21 |     15850 |            0.13 |
+|   Register     |    <0.001 |      133 |    126800 |            0.10 |
+|   F7/F8 Muxes  |    <0.001 |        3 |     63400 |           <0.01 |
+|   Others       |     0.000 |       10 |       --- |             --- |
+| Signals        |    <0.001 |      261 |       --- |             --- |
+| I/O            |     0.027 |       38 |       210 |           18.10 |
 | Static Power   |     0.097 |          |           |                 |
-| Total          |     0.110 |          |           |                 |
+| Total          |     0.127 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,8 +73,8 @@ Table of Contents
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.007 |       0.003 |      0.004 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.011 |       0.007 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,7 +141,7 @@ Table of Contents
 +-------------+-----------+
 | Name        | Power (W) |
 +-------------+-----------+
-| novaNexysA7 |     0.013 |
+| novaNexysA7 |     0.030 |
 |   processor |     0.001 |
 +-------------+-----------+
 

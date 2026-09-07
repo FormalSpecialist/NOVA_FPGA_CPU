@@ -57,7 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param general.usePosixSpawnForFork 1
-set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -87,6 +87,7 @@ read_verilog -library xil_defaultlib {
   {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/instructionRegister.v}
   {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/programCounter.v}
   {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/registers.v}
+  {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v}
   {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/statusRegister.v}
   {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/novaNexysA7.v}
 }
@@ -99,8 +100,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v2.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v2.xdc}}]
+read_xdc {{C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v3.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Constraints/novaNexysA7_v3.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 

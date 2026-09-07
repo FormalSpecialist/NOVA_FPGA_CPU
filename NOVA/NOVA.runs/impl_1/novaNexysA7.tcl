@@ -107,6 +107,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param general.usePosixSpawnForFork 1
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 6  }
   open_checkpoint novaNexysA7_routed.dcp
   set_property webtalk.parent_dir {C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/NOVA/NOVA.cache/wt} [current_project]

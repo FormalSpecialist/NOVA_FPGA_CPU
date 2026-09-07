@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/BOARD/sevenSegmentDisplay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegmentDisplay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Simulation Sources/BOARD/sevenSegmentDisplay_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sevenSegmentDisplay_tb

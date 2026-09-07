@@ -2,22 +2,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 // Engineer: Noah Arnold
 //
-// Design Name: NOVA Nexys A7 Top Level
+// Design Name: NOVA Nexys A7 Top Level with Hex Display
 // Module Name: novaNexysA7
 // Project Name: NOVA
 // Target Device: xc7a100tcsg324-1 (Nexys A7-100T)
 // Description:
 //   Board-level wrapper for the verified NOVA CPU core. It provides synchronized
 //   reset and switch inputs, debounced single-step control, automatic slow-run
-//   control, and four selectable LED debug views.
+//   control, selectable LEDs, and an eight-digit PC/instruction/result display.
 //////////////////////////////////////////////////////////////////////////////////
 
 module novaNexysA7 #(
-    // 49,999,999 produces one CPU clock request every 0.5 seconds when the
-    // board clock is 100 MHz, so the CPU advances at two cycles per second.
     parameter integer AUTO_COUNT_MAX = 49_999_999,
     parameter integer AUTO_COUNTER_WIDTH = 26,
     parameter integer DEBOUNCE_COUNTER_WIDTH = 20,
+    parameter integer DISPLAY_REFRESH_COUNTER_WIDTH = 17,
 
     // Set to zero only in the behavioral testbench. Hardware must use BUFGCE.
     parameter integer USE_XILINX_CLOCK_BUFFER = 1
@@ -26,7 +25,17 @@ module novaNexysA7 #(
     input             CPU_RESETN,
     input             BTNC,
     input      [2:0]  SW,
-    output reg [15:0] LED
+    output reg [15:0] LED,
+
+    output            CA,
+    output            CB,
+    output            CC,
+    output            CD,
+    output            CE,
+    output            CF,
+    output            CG,
+    output            DP,
+    output     [7:0]  AN
 );
 
     // CPU_RESETN is active low. Assertion is asynchronous so the reset request
@@ -100,9 +109,6 @@ module novaNexysA7 #(
         end
     end
 
-    // While reset is asserted, the core continues receiving clock edges so its
-    // synchronous state elements are reset. Otherwise it receives one complete
-    // clock pulse for each automatic tick or debounced manual step.
     wire coreClockEnable;
     wire coreClock;
 
@@ -111,17 +117,12 @@ module novaNexysA7 #(
 
     generate
         if (USE_XILINX_CLOCK_BUFFER != 0) begin : hardwareClockBuffer
-            // BUFGCE gates the clock on a safe clock boundary and routes the
-            // resulting pulses on the FPGA's dedicated global clock network.
             BUFGCE coreClockBuffer (
                 .I(CLK100MHZ),
                 .CE(coreClockEnable),
                 .O(coreClock)
             );
         end else begin : behavioralClockBuffer
-            // Used only by novaNexysA7_tb so it does not require a UNISIM model.
-            // Sampling CE on the falling edge models the glitch-free behavior
-            // of a synchronous BUFGCE and guarantees one full clock pulse.
             reg behavioralEnableLatch;
             always @(negedge CLK100MHZ)
                 behavioralEnableLatch <= coreClockEnable;
@@ -158,7 +159,32 @@ module novaNexysA7 #(
         .debugRegisterWriteData(debugRegisterWriteData)
     );
 
-    // SW[2:1] selects what the sixteen individual LEDs display.
+    // The eight hexadecimal digits always read from left to right as:
+    //     PP.IIII.RR
+    // where PP is PC, IIII is the instruction, and RR is the ALU result.
+    wire [31:0] sevenSegmentValue;
+    wire [7:0]  decimalPointEnable;
+    wire [6:0]  segmentSignals;
+
+    assign sevenSegmentValue = {debugProgramAddress,
+                                debugInstruction,
+                                debugExecutionResult};
+    assign decimalPointEnable = 8'b0100_0100;
+    assign {CA, CB, CC, CD, CE, CF, CG} = segmentSignals;
+
+    sevenSegmentDisplay #(
+        .REFRESH_COUNTER_WIDTH(DISPLAY_REFRESH_COUNTER_WIDTH)
+    ) displayDriver (
+        .clk(CLK100MHZ),
+        .reset(coreReset),
+        .hexValue(sevenSegmentValue),
+        .decimalPointEnable(decimalPointEnable),
+        .segments(segmentSignals),
+        .DP(DP),
+        .AN(AN)
+    );
+
+    // SW[2:1] retains the selectable binary LED debug views.
     always @(*) begin
         case (displaySelect)
             2'b00: LED = debugInstruction;
