@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1788812440" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/alu.dcp">
-  <File Type="PA-TCL" Name="novaNexysA7.tcl"/>
-  <File Type="REPORTS-TCL" Name="novaNexysA7_reports.tcl"/>
-  <File Type="RDS-RDS" Name="novaNexysA7.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="novaNexysA7_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="novaNexysA7_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="novaNexysA7_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="novaNexysA7.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="novaNexysA7_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="novaNexysA7_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1788824340" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/alu.dcp">
+  <File Type="PA-TCL" Name="novaSumDemoTop.tcl"/>
+  <File Type="REPORTS-TCL" Name="novaSumDemoTop_reports.tcl"/>
+  <File Type="RDS-RDS" Name="novaSumDemoTop.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="novaSumDemoTop_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="novaSumDemoTop_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="novaSumDemoTop_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="novaSumDemoTop.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="novaSumDemoTop_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="novaSumDemoTop_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/sum_1_to_10.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../Design Sources/CU/novaDefinitions.vh">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -74,6 +80,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../Design Sources/BOARD/novaNexysA7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../Design Sources/MEMORY/programCounter.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -102,7 +115,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Design Sources/BOARD/novaNexysA7.v">
+    <File Path="$PPRDIR/../Design Sources/MEMORY/novaSumDemoTop.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -111,7 +124,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="novaNexysA7"/>
+      <Option Name="TopModule" Val="novaSumDemoTop"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>

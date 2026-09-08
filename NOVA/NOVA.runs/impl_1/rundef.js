@@ -26,7 +26,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "write_bitstream", "begin" );
 ISEStep( "vivado",
-         "-log novaNexysA7.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source novaNexysA7.tcl -notrace" );
+         "-log novaSumDemoTop.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source novaSumDemoTop.tcl -notrace" );
 
 
 

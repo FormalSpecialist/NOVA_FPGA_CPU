@@ -1,3 +1,3 @@
 Time resolution is 1 ps
-PASS: all 40 seven-segment display tests completed successfully.
-$finish called at time : 1441 ns : File "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Simulation Sources/BOARD/sevenSegmentDisplay_tb.v" Line 122
+PASS: all 6 NOVA summation board tests completed successfully.
+$finish called at time : 6586 ns : File "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Simulation Sources/BOARD/sumBoard_tb.v" Line 100
