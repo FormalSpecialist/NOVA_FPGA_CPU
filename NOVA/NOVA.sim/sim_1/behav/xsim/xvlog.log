@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Design Sources/MEMORY/novaSumDemoTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module novaSumDemoTop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/narno/Desktop/Programing/Personal Project/NOVA_FPGA_CPU/Simulation Sources/BOARD/sumBoard_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sumBoard_tb

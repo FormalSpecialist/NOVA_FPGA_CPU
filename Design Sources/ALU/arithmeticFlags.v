@@ -1,71 +1,46 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Noah Arnold
-// 
-// Create Date: 07/09/2026 10:27:22 AM
-// Design Name: fpga_cpu
-// Module Name: arithmeticFlags
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+`include "novaDefinitions.vh"
 
 module arithmeticFlags (
-    input [7:0] operandA,
-    input [7:0] operandB,
-    input [2:0] opCode,
-    input [7:0] result,
-    input flags_en,
+    input      [7:0] operandA,
+    input      [7:0] operandB,
+    input      [2:0] aluOperation,
+    input      [7:0] result,
 
-    output reg zeroFlag,
-    output reg overflowFlag,
-    output reg underflowFlag
+    output           zeroFlag,
+    output reg       carryFlag,
+    output reg       borrowFlag
 );
 
-    parameter opADD = 3'b000;
-    parameter opSUB = 3'b001;
-    parameter opAND = 3'b010;
-    parameter opOR  = 3'b011;
+    wire [8:0] extendedSum;
 
-always @ (*) begin
-    
-    zeroFlag = 0;
-    overflowFlag = 0;
-    underflowFlag = 0;
-    
-    if (flags_en) begin
+    // The ninth bit is the carry out of unsigned eight-bit addition.
+    assign extendedSum = {1'b0, operandA} + {1'b0, operandB};
+    assign zeroFlag = (result == 8'h00);
 
-        // Testing to see if result is zero
-        zeroFlag = ( result == 8'b0 );
+    always @(*) begin
+        carryFlag = 1'b0;
+        borrowFlag = 1'b0;
 
-        // Tests to see if Overflow occurs | a + b = result | 1 = ON and 0 = OFF
-        if ( opCode == opADD ) begin
+        case (aluOperation)
+            `NOVA_ALU_ADD:
+                carryFlag = extendedSum[8];
 
-            overflowFlag = ( operandA > result || operandB > result );
+            `NOVA_ALU_SUB:
+                borrowFlag = (operandA < operandB);
 
-        end 
+            // For shifts, carry stores the bit shifted out of the result.
+            `NOVA_ALU_SHL:
+                carryFlag = operandA[7];
 
-        // Tests to see if Underflow occurs | a - b = result | 1 = ON and 0 = OFF
-        if (opCode == opSUB ) begin
+            `NOVA_ALU_SHR:
+                carryFlag = operandA[0];
 
-            underflowFlag = ( result > operandA);
-
-        end
-
+            default: begin
+                carryFlag = 1'b0;
+                borrowFlag = 1'b0;
+            end
+        endcase
     end
-
-end
-
-
-
 
 endmodule

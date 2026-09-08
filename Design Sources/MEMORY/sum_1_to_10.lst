@@ -1,0 +1,18 @@
+ADDR  WORD  SOURCE
+----  ----  ------
+00    120A  LDI R1, 10
+01    1400  LDI R2, 0
+02    1601  LDI R3, 1
+03    3488  ADD R2, R2, R1
+04    4258  SUB R1, R1, R3
+05    B007  JZ done
+06    A003  JMP loop
+07    9410  ST R2, 0x10
+08    8810  LD R4, 0x10
+09    3B00  ADD R5, R4, R0
+0A    F000  HALT
+
+SYMBOLS
+-------
+LOOP             03
+DONE             07

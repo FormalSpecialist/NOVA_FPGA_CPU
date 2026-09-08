@@ -1,131 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1785381135">
-  <File Type="ROUTE-BLACKBOX-DCP" Name="alu_routed_bb.dcp"/>
-  <File Type="OPT-UTIL" Name="alu_utilization_opted.rpt"/>
-  <File Type="ROUTE-PWR" Name="alu_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="alu.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="alu_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="alu_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="alu_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="alu_rqa_opted.pb"/>
-  <File Type="REPORTS-TCL" Name="alu_reports.tcl"/>
-  <File Type="ROUTE-TIMING-PB" Name="alu_timing_summary_routed.pb"/>
-  <File Type="OPT-UTIL-PB" Name="alu_utilization_opted.pb"/>
-  <File Type="OPT-DCP" Name="alu_opt.dcp"/>
-  <File Type="OPT-DRC" Name="alu_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="alu.hwdef"/>
-  <File Type="OPT-TIMING" Name="alu_timing_summary_opted.rpt"/>
-  <File Type="PWROPT-DCP" Name="alu_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="alu_drc_pwropted.rpt"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="alu.nts"/>
-  <File Type="PWROPT-TIMING" Name="alu_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="alu_placed.dcp"/>
-  <File Type="PLACE-IO" Name="alu_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="alu_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="alu_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="alu_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="alu_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="alu_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="alu_incremental_reuse_pre_placed.rpt"/>
-  <File Type="NOC_SOLUTION_FILE" Name="alu.ncr"/>
-  <File Type="PLACE-TIMING" Name="alu_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="alu_power_routed.rpx"/>
-  <File Type="PLACE-RQA-PB" Name="alu_rqa_placed.pb"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="alu_postplace_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="alu_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="alu_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="alu_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-TIMING" Name="alu_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-UTIL" Name="alu_utilization_routed.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="alu_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="alu_routed.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="alu_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-UTIL-PB" Name="alu_utilization_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="alu_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="alu_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="alu_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alu_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="alu_rqs_routed.pb"/>
-  <File Type="ROUTE-STATUS" Name="alu_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="alu_route_status.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="alu_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="alu_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="alu_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="alu_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="alu_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="alu_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alu_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="alu_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="alu_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="alu_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="alu_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="alu_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="alu_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BG-BIT" Name="alu.bit"/>
-  <File Type="BG-BIN" Name="alu.bin"/>
-  <File Type="BITSTR-MSK" Name="alu.msk"/>
-  <File Type="BITSTR-RBT" Name="alu.rbt"/>
-  <File Type="BITSTR-NKY" Name="alu.nky"/>
-  <File Type="BITSTR-BMM" Name="alu_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="alu.mmi"/>
-  <File Type="PDI-FILE" Name="alu.pdi"/>
-  <File Type="BOOT-PDI-FILE" Name="alu_boot.pdi"/>
-  <File Type="PL-PDI-FILE" Name="alu_pld.pdi"/>
-  <File Type="RCFI_FILE" Name="alu.rcfi"/>
-  <File Type="CFI_FILE" Name="alu.cfi"/>
-  <File Type="RNPI_FILE" Name="alu.rnpi"/>
-  <File Type="RCDO-FILE" Name="alu.rcdo"/>
-  <File Type="MARKER-RNPI-FILE" Name="alu_markers.rnpi"/>
-  <File Type="MARKER-RCDO-FILE" Name="alu_markers.rcdo"/>
-  <File Type="BOOT_RNPI_FILE" Name="alu_boot.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="alu_boot_markers.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="alu_pld.rnpi"/>
-  <File Type="PL_MARKER_RNPI_FILE" Name="alu_pld_markers.rnpi"/>
-  <File Type="PL_MASK_RNPI_FILE" Name="alu_pld_mask.rnpi"/>
-  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="alu_pld_shutdown.rnpi"/>
-  <File Type="PL_UNMASK_RNPI_FILE" Name="alu_pld_unmask.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="alu_pld.rcdo"/>
-  <File Type="PL-CLEAR-RCDO-FILE" Name="alu_pld_clear.rcdo"/>
-  <File Type="PL_MARKER_RCDO_FILE" Name="alu_pld_markers.rcdo"/>
-  <File Type="PL_MASK_RCDO_FILE" Name="alu_pld_mask.rcdo"/>
-  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="alu_pld_unmask_markers.rcdo"/>
-  <File Type="PL_UNMASK_RCDO_FILE" Name="alu_pld_unmask.rcdo"/>
-  <File Type="NPI_FILE" Name="alu.npi"/>
-  <File Type="RBD_FILE" Name="alu.rbd"/>
-  <File Type="MMI-FILE" Name="alu.mmi"/>
-  <File Type="BIF-FILE" Name="alu.bif"/>
-  <File Type="BOOT-BIF-FILE" Name="alu_boot.bif"/>
-  <File Type="PL-BIF-FILE" Name="alu_pld.bif"/>
-  <File Type="LTX-FILE" Name="alu.ltx"/>
-  <File Type="BOOT-LTX-FILE" Name="alu_boot.ltx"/>
-  <File Type="PL-LTX-FILE" Name="alu_pld.ltx"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1788824537">
+  <File Type="PA-TCL" Name="novaSumDemoTop.tcl"/>
+  <File Type="REPORTS-TCL" Name="novaSumDemoTop_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="novaSumDemoTop_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="novaSumDemoTop_opt.dcp"/>
+  <File Type="OPT-DRC" Name="novaSumDemoTop_drc_opted.rpt"/>
+  <File Type="OPT-UTIL" Name="novaSumDemoTop_utilization_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="novaSumDemoTop_utilization_opted.pb"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="novaSumDemoTop_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="novaSumDemoTop.hwdef"/>
+  <File Type="OPT-TIMING" Name="novaSumDemoTop_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="novaSumDemoTop_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="novaSumDemoTop_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="novaSumDemoTop_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="novaSumDemoTop_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="novaSumDemoTop_placed.dcp"/>
+  <File Type="PLACE-IO" Name="novaSumDemoTop_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="novaSumDemoTop_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="novaSumDemoTop_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="novaSumDemoTop_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="novaSumDemoTop_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="novaSumDemoTop_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="novaSumDemoTop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="novaSumDemoTop_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="novaSumDemoTop_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="novaSumDemoTop_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="novaSumDemoTop_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="novaSumDemoTop_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="novaSumDemoTop_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="novaSumDemoTop_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="novaSumDemoTop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="novaSumDemoTop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="novaSumDemoTop_routed_bb.dcp"/>
+  <File Type="ROUTE-UTIL" Name="novaSumDemoTop_utilization_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="novaSumDemoTop_utilization_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="novaSumDemoTop_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="novaSumDemoTop_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="novaSumDemoTop_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="novaSumDemoTop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="novaSumDemoTop_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="novaSumDemoTop_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="novaSumDemoTop_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="novaSumDemoTop_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="novaSumDemoTop_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="novaSumDemoTop_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="novaSumDemoTop_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="novaSumDemoTop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="novaSumDemoTop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="novaSumDemoTop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="novaSumDemoTop_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="novaSumDemoTop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="novaSumDemoTop_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="novaSumDemoTop_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="novaSumDemoTop_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="novaSumDemoTop_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="novaSumDemoTop_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="novaSumDemoTop_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="novaNexysA7_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="novaNexysA7_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="novaNexysA7_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="novaNexysA7_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="novaNexysA7_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="novaNexysA7_bus_skew_postroute_physopted.rpx"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="novaSumDemoTop.nts"/>
+  <File Type="NOC_SOLUTION_FILE" Name="novaSumDemoTop.ncr"/>
+  <File Type="BG-BIT" Name="novaSumDemoTop.bit"/>
+  <File Type="BG-BIN" Name="novaSumDemoTop.bin"/>
+  <File Type="BITSTR-MSK" Name="novaSumDemoTop.msk"/>
+  <File Type="BITSTR-RBT" Name="novaSumDemoTop.rbt"/>
+  <File Type="BITSTR-NKY" Name="novaSumDemoTop.nky"/>
+  <File Type="BITSTR-BMM" Name="novaSumDemoTop_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="novaSumDemoTop.mmi"/>
+  <File Type="PDI-FILE" Name="novaSumDemoTop.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="novaSumDemoTop_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="novaSumDemoTop_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="novaSumDemoTop.rcfi"/>
+  <File Type="CFI_FILE" Name="novaSumDemoTop.cfi"/>
+  <File Type="RNPI_FILE" Name="novaSumDemoTop.rnpi"/>
+  <File Type="RCDO-FILE" Name="novaSumDemoTop.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="novaSumDemoTop_markers.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="novaSumDemoTop_markers.rcdo"/>
+  <File Type="BOOT_RNPI_FILE" Name="novaSumDemoTop_boot.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="novaSumDemoTop_boot_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="novaSumDemoTop_pld.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="novaSumDemoTop_pld_markers.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="novaSumDemoTop_pld_mask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="novaSumDemoTop_pld_shutdown.rnpi"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="novaSumDemoTop_pld_unmask.rnpi"/>
+  <File Type="PL-RCDO-FILE" Name="novaSumDemoTop_pld.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="novaSumDemoTop_pld_clear.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="novaSumDemoTop_pld_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="novaSumDemoTop_pld_mask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="novaSumDemoTop_pld_unmask_markers.rcdo"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="novaSumDemoTop_pld_unmask.rcdo"/>
+  <File Type="NPI_FILE" Name="novaSumDemoTop.npi"/>
+  <File Type="RBD_FILE" Name="novaSumDemoTop.rbd"/>
+  <File Type="MMI-FILE" Name="novaSumDemoTop.mmi"/>
+  <File Type="BIF-FILE" Name="novaSumDemoTop.bif"/>
+  <File Type="BOOT-BIF-FILE" Name="novaSumDemoTop_boot.bif"/>
+  <File Type="PL-BIF-FILE" Name="novaSumDemoTop_pld.bif"/>
+  <File Type="LTX-FILE" Name="novaSumDemoTop.ltx"/>
+  <File Type="BOOT-LTX-FILE" Name="novaSumDemoTop_boot.ltx"/>
+  <File Type="PL-LTX-FILE" Name="novaSumDemoTop_pld.ltx"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="alu.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="alu.sysdef"/>
-  <File Type="BG-BGN" Name="alu.bgn"/>
-  <File Type="BG-DRC" Name="alu.drc"/>
-  <File Type="RDI-RDI" Name="alu.vdi"/>
+  <File Type="BITSTR-LTX" Name="novaSumDemoTop.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="novaSumDemoTop.sysdef"/>
+  <File Type="BG-BGN" Name="novaSumDemoTop.bgn"/>
+  <File Type="BG-DRC" Name="novaSumDemoTop.drc"/>
+  <File Type="RDI-RDI" Name="novaSumDemoTop.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="alu_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="alu_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="novaSumDemoTop_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="novaSumDemoTop_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/../Design Sources/CU/cu.v">
+    <File Path="$PPRDIR/../Design Sources/MEMORY/sum_1_to_10.mem">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Design Sources/MEMORY/mu.v">
+    <File Path="$PPRDIR/../Design Sources/CU/novaDefinitions.vh">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="IsVisible" Val="1"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/ALU/alu.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -138,7 +142,84 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Design Sources/ALU/alu.v">
+    <File Path="$PPRDIR/../Design Sources/BOARD/buttonConditioner.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/CU/cpuCore.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/CU/cu.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/dataMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/instructionMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/instructionRegister.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/BOARD/novaNexysA7.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/programCounter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/registers.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/BOARD/sevenSegmentDisplay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/statusRegister.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Design Sources/MEMORY/novaSumDemoTop.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -147,13 +228,13 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="alu"/>
+      <Option Name="TopModule" Val="novaSumDemoTop"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../Constraints/Nexys-A7-100T-Master.xdc">
+    <File Path="$PPRDIR/../Constraints/novaNexysA7_v3.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -165,14 +246,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/alu.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2025"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

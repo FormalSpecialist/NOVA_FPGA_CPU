@@ -1,90 +1,40 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: Noah Arnold
-// 
-// Create Date: 06/24/2026 04:26:52 PM
-// Design Name: Arithmatic Logice Unit
-// Module Name: alu
-// Project Name: NOVA
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: arithmeticFlags.v
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
+`include "novaDefinitions.vh"
 
-module alu(
+module alu (
+    input      [7:0] operandA,
+    input      [7:0] operandB,
+    input      [2:0] aluOperation,
 
-    input [7:0] operandA,
-    input [7:0] operandB,
-    input [2:0] opCode,
-    input reset,
-    
     output reg [7:0] result,
-    output zeroFlag,
-    output overflowFlag,
-    output underflowFlag
-
+    output           zeroFlag,
+    output           carryFlag,
+    output           borrowFlag
 );
 
-    parameter opADD = 4'b0000;
-    parameter opSUB = 4'b0001;
-    parameter opAND = 4'b0010;
-    parameter opOR = 4'b0011;
-
-    // Enable for Flags
-    reg flags_en;
-    
-    // Initialize Values at Program Start
-    initial begin
-        result = 8'b0000_0000;
-        flags_en = 1'b0;
-    end
-    
-
-always @ (*) begin
-
-    if (reset) begin
-        result = 8'b0000_0000;
-        flags_en = 1'b0;
-    end else begin
-       flags_en = 1'b1;
+    // The ALU is combinational: it calculates values but stores no state.
+    always @(*) begin
+        case (aluOperation)
+            `NOVA_ALU_ADD:    result = operandA + operandB;
+            `NOVA_ALU_SUB:    result = operandA - operandB;
+            `NOVA_ALU_AND:    result = operandA & operandB;
+            `NOVA_ALU_OR:     result = operandA | operandB;
+            `NOVA_ALU_XOR:    result = operandA ^ operandB;
+            `NOVA_ALU_SHL:    result = operandA << 1;
+            `NOVA_ALU_SHR:    result = operandA >> 1;
+            `NOVA_ALU_PASS_B: result = operandB;
+            default:          result = 8'h00;
+        endcase
     end
 
-
-    // Determines which action to perfom based on Operational Code
-    case (opCode)
-
-        opADD: result = operandA + operandB;
-        opSUB: result = operandA - operandB;
-        opAND: result = operandA & operandB;
-        opOR: result = operandA | operandB;
-        default: result = 8'b0000_0000;
-
-    endcase
-
-end
-
-
-    // Initializations of Modules
     arithmeticFlags flags (
         .operandA(operandA),
         .operandB(operandB),
-        .opCode(opCode),
+        .aluOperation(aluOperation),
         .result(result),
-        .flags_en(flags_en),
-
         .zeroFlag(zeroFlag),
-        .overflowFlag(overflowFlag),
-        .underflowFlag(underflowFlag)
+        .carryFlag(carryFlag),
+        .borrowFlag(borrowFlag)
     );
-    
-
 
 endmodule

@@ -1,0 +1,28 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sumBoard_tb_behav xil_defaultlib.sumBoard_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.buttonConditioner(COUNTER_WIDTH=...
+Compiling module xil_defaultlib.cu
+Compiling module xil_defaultlib.programCounter
+Compiling module xil_defaultlib.instructionMemory
+Compiling module xil_defaultlib.instructionRegister
+Compiling module xil_defaultlib.registers
+Compiling module xil_defaultlib.arithmeticFlags
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.statusRegister
+Compiling module xil_defaultlib.dataMemory
+Compiling module xil_defaultlib.cpuCore
+Compiling module xil_defaultlib.sevenSegmentDisplay(REFRESH_COUN...
+Compiling module xil_defaultlib.novaNexysA7(AUTO_COUNT_MAX=3,AUT...
+Compiling module xil_defaultlib.novaSumDemoTop(AUTO_COUNT_MAX=3,...
+Compiling module xil_defaultlib.sumBoard_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sumBoard_tb_behav
